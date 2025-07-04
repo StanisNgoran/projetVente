@@ -18,7 +18,7 @@ export function Home(){
             /> 
 
         {/* // une grille affichant 3 colonnes de produit sur android, 4 sur tablettes, et 6 sur PC */}
-            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2 my-4"> 
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 my-4"> 
                 {PRODUIT.map((produit,i)=>( //je parcours le tableau de produit que j'ai crée dans listeProduit
                         <CardProduit //chaque produit correspond à une carte, donc s'il ya 10 produits, on a 10 cartes
                         key={i}

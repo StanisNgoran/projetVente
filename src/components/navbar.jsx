@@ -1,4 +1,4 @@
-import { LogInIcon,SparkleIcon, ShoppingCart } from "lucide-react";
+import { LogInIcon,SparkleIcon, ShoppingCart,User } from "lucide-react";
 import { Button } from "./form/bouton";
 import { SearchBar } from "./form/searchbar";
 import { Computer,BriefcaseMedical,Gamepad,Footprints } from "lucide-react";
@@ -28,7 +28,7 @@ export function Navbar(){
 
                     <div className="w-1/3 mr-4 sm:w-1/3 ">
                         <SearchBar
-                            className="border border-gray-400 p-1 w-full rounded-xl sm:w-full sm:p-2"
+                            className="border border-gray-400 p-0 w-full rounded-xl sm:w-full sm:p-2"
                             placeholder="Rech..."
                         />
                     </div>
@@ -46,9 +46,10 @@ export function Navbar(){
 
                         <Button 
                             type={"button"} 
-                            className={"flex px-1 py-1 rounded-3xl bg-blue-400 text-white text-sm hover:bg-blue-500 sm:px-2 sm:py-2 sm:text-md"}>
-                            <LogInIcon/>
-                            S'inscrire
+                            className={"flex px-1 py-1 rounded-3xl  text-sm hover:bg-blue-500 sm:px-2 sm:py-2 sm:text-md"}>
+                            <User/>
+                            <span className="hidden sm:inline">S'inscrire</span>
+                            
                         </Button>
 
                     </div>
